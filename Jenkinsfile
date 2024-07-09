@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-username/spring-petclinic.git'
+                git 'https://github.com/your-username/spring-petclinic.git', credentialsId: 'b86b14c1-4f74-45b4-9154-81eb6e59f126'
             }
         }
         stage('Build') {
